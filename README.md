@@ -1,6 +1,6 @@
 # Pixmob Pulseira - Engenharia Reversa e Controle Personalizado
 
-![Pixmob Pulseira](coldplay.jpg)
+![Pixmob Pulseira](images/coldplay.jpg)
 
 Bem-vindo ao repositório Pixmob Pulseira! Este projeto tem como objetivo permitir que você dê uma nova vida à famosa pulseira Pixmob usada nos shows do Coldplay, explorando sua tecnologia infravermelha (IR) para controle personalizado das cores. Com este projeto, você poderá aprender e implementar os seguintes aspectos:
 
@@ -8,7 +8,7 @@ Bem-vindo ao repositório Pixmob Pulseira! Este projeto tem como objetivo permit
 - Criar um transmissor IR para se comunicar com a pulseira.
 - Controlar as cores da pulseira através de um Arduino Nano.
 
-(pixmob.jpg)
+![Pixmob Pulseira](images/pixmob.jpg)
 
 ## Funcionalidades Principais
 
@@ -18,10 +18,10 @@ Bem-vindo ao repositório Pixmob Pulseira! Este projeto tem como objetivo permit
 
 ## Ligações
 
-(esquema.png)
+![Pixmob Pulseira](images/esquema.png)
 
 ## Projeto 
-(projeto.jpg)
+![Pixmob Pulseira](images/projeto.jpg)
 
 ## Configuração
 
