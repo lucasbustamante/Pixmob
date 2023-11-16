@@ -52,7 +52,7 @@ void loop() { // loop de execução do programa principal
   else if (valorPotenciometro < 102.3) { 
     tamanho = sizeof red2 / sizeof *red2;
     IrSender.sendRaw(red2, tamanho, 38);
-  
+  }
   else if (valorPotenciometro < 153.45) { 
     tamanho = sizeof green1 / sizeof *green1;
     IrSender.sendRaw(green1, tamanho, 38);
