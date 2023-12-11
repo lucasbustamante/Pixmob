@@ -45,85 +45,175 @@ void loop() { // loop de execução do programa principal
     tamanho = sizeof off / sizeof *off;
     IrSender.sendRaw(off, tamanho, 38);
   } 
-  else if (valorPotenciometro < 51.15) { 
+  else if (valorPotenciometro < 46.50) { 
     tamanho = sizeof red1 / sizeof *red1;
     IrSender.sendRaw(red1, tamanho, 38);
   }
-  else if (valorPotenciometro < 102.3) { 
+  else if (valorPotenciometro < 93) { 
     tamanho = sizeof red2 / sizeof *red2;
     IrSender.sendRaw(red2, tamanho, 38);
   }
-  else if (valorPotenciometro < 153.45) { 
+  else if (valorPotenciometro < 139.50) { 
     tamanho = sizeof green1 / sizeof *green1;
     IrSender.sendRaw(green1, tamanho, 38);
   }
-  else if (valorPotenciometro < 204.60) { 
+  else if (valorPotenciometro < 186) { 
     tamanho = sizeof green2 / sizeof *green2;
     IrSender.sendRaw(green2, tamanho, 38);
   }
-  else if (valorPotenciometro < 255.75) {
+  else if (valorPotenciometro < 232.50) {
     tamanho = sizeof blue1 / sizeof *blue1;
     IrSender.sendRaw(blue1, tamanho, 38);
   }
-  else if (valorPotenciometro < 306.90) { 
+  else if (valorPotenciometro < 279) { 
     tamanho = sizeof blue2 / sizeof *blue2;
     IrSender.sendRaw(blue2, tamanho, 38);
   }
-  else if (valorPotenciometro < 358.05) { 
+  else if (valorPotenciometro < 325.5) { 
    tamanho = sizeof magenta1 / sizeof *magenta1;
     IrSender.sendRaw(magenta1, tamanho, 38);
   }
-  else if (valorPotenciometro < 409.20) { 
+  else if (valorPotenciometro < 372) { 
     tamanho = sizeof magenta2 / sizeof *magenta2;
     IrSender.sendRaw(magenta2, tamanho, 38);
   }
-   else if (valorPotenciometro < 460.35) { 
+   else if (valorPotenciometro < 418.50) { 
     tamanho = sizeof magenta3 / sizeof *magenta3;
     IrSender.sendRaw(magenta3, tamanho, 38);
   }
-  else if (valorPotenciometro < 511.50) { 
+  else if (valorPotenciometro < 465) { 
     tamanho = sizeof yellow1 / sizeof *yellow1;
     IrSender.sendRaw(yellow1, tamanho, 38);
   }
-  else if (valorPotenciometro < 562.65) {
+  else if (valorPotenciometro < 511.5) {
     tamanho = sizeof yellow2 / sizeof *yellow2;
     IrSender.sendRaw(yellow2, tamanho, 38);
   }
-  else if (valorPotenciometro < 613.80) { 
+  else if (valorPotenciometro < 558) { 
     tamanho = sizeof pink1 / sizeof *pink1;
     IrSender.sendRaw(pink1, tamanho, 38);
   }
-  else if (valorPotenciometro < 664.95) { 
+  else if (valorPotenciometro < 604.5) { 
     tamanho = sizeof pink2 / sizeof *pink2;
     IrSender.sendRaw(pink2, tamanho, 38);
   }
-  else if (valorPotenciometro < 716.10) {
+  else if (valorPotenciometro < 651) {
     tamanho = sizeof orange1 / sizeof *orange1;
     IrSender.sendRaw(orange1, tamanho, 38);
   }
-  else if (valorPotenciometro < 767.25) { 
+  else if (valorPotenciometro < 697.50) { 
     tamanho = sizeof orange2 / sizeof *orange2;
     IrSender.sendRaw(orange2, tamanho, 38);
   }
-  else if (valorPotenciometro < 818.40) { 
+  else if (valorPotenciometro < 744) { 
     tamanho = sizeof white1 / sizeof *white1;
     IrSender.sendRaw(white1, tamanho, 38);
   }
-  else if (valorPotenciometro < 869.55) { 
+  else if (valorPotenciometro < 790.50) { 
     tamanho = sizeof white2 / sizeof *white2;
     IrSender.sendRaw(white2, tamanho, 38);
   }
-  else if (valorPotenciometro < 920.70) {
+  else if (valorPotenciometro < 837) {
     tamanho = sizeof turquoise1 / sizeof *turquoise1;
     IrSender.sendRaw(turquoise1, tamanho, 38);
   }
-  else if (valorPotenciometro < 971.85) {
+  else if (valorPotenciometro < 883.50) {
     tamanho = sizeof turquoise2 / sizeof *turquoise2;
     IrSender.sendRaw(turquoise2, tamanho, 38);
   }
-  else if (valorPotenciometro < 1023) { 
+  else if (valorPotenciometro < 930) { 
     tamanho = sizeof turquoise3 / sizeof *turquoise3;
     IrSender.sendRaw(turquoise3, tamanho, 38);
+  }
+    else if (valorPotenciometro < 976.50) { 
+    tamanho = sizeof turquoise3 / sizeof *turquoise3;
+    IrSender.sendRaw(turquoise3, tamanho, 38);
+  }
+    else if (valorPotenciometro < 1023) { 
+      
+      int randomColor = random(0, 19);
+
+  // Mapeia o valor do potenciômetro para escolher a cor
+if (randomColor == 0) { 
+    tamanho = sizeof red1 / sizeof *red1;
+    IrSender.sendRaw(red1, tamanho, 38);
+  }
+  else if (randomColor == 1) { 
+    tamanho = sizeof red2 / sizeof *red2;
+    IrSender.sendRaw(red2, tamanho, 38);
+  }
+  else if (randomColor == 2) { 
+    tamanho = sizeof green1 / sizeof *green1;
+    IrSender.sendRaw(green1, tamanho, 38);
+  }
+  else if (randomColor == 3) { 
+    tamanho = sizeof green2 / sizeof *green2;
+    IrSender.sendRaw(green2, tamanho, 38);
+  }
+  else if (randomColor == 4) {
+    tamanho = sizeof blue1 / sizeof *blue1;
+    IrSender.sendRaw(blue1, tamanho, 38);
+  }
+  else if (randomColor == 5) { 
+    tamanho = sizeof blue2 / sizeof *blue2;
+    IrSender.sendRaw(blue2, tamanho, 38);
+  }
+  else if (randomColor == 6) { 
+   tamanho = sizeof magenta1 / sizeof *magenta1;
+    IrSender.sendRaw(magenta1, tamanho, 38);
+  }
+  else if (randomColor == 7) { 
+    tamanho = sizeof magenta2 / sizeof *magenta2;
+    IrSender.sendRaw(magenta2, tamanho, 38);
+  }
+   else if (randomColor == 8) { 
+    tamanho = sizeof magenta3 / sizeof *magenta3;
+    IrSender.sendRaw(magenta3, tamanho, 38);
+  }
+  else if (randomColor == 9) { 
+    tamanho = sizeof yellow1 / sizeof *yellow1;
+    IrSender.sendRaw(yellow1, tamanho, 38);
+  }
+  else if (randomColor == 10) {
+    tamanho = sizeof yellow2 / sizeof *yellow2;
+    IrSender.sendRaw(yellow2, tamanho, 38);
+  }
+  else if (randomColor == 11) { 
+    tamanho = sizeof pink1 / sizeof *pink1;
+    IrSender.sendRaw(pink1, tamanho, 38);
+  }
+  else if (randomColor == 12) { 
+    tamanho = sizeof pink2 / sizeof *pink2;
+    IrSender.sendRaw(pink2, tamanho, 38);
+  }
+  else if (randomColor == 13) {
+    tamanho = sizeof orange1 / sizeof *orange1;
+    IrSender.sendRaw(orange1, tamanho, 38);
+  }
+  else if (randomColor == 14) { 
+    tamanho = sizeof orange2 / sizeof *orange2;
+    IrSender.sendRaw(orange2, tamanho, 38);
+  }
+  else if (randomColor == 15) { 
+    tamanho = sizeof white1 / sizeof *white1;
+    IrSender.sendRaw(white1, tamanho, 38);
+  }
+  else if (randomColor == 16) { 
+    tamanho = sizeof white2 / sizeof *white2;
+    IrSender.sendRaw(white2, tamanho, 38);
+  }
+  else if (randomColor == 17) {
+    tamanho = sizeof turquoise1 / sizeof *turquoise1;
+    IrSender.sendRaw(turquoise1, tamanho, 38);
+  }
+  else if (randomColor == 18) {
+    tamanho = sizeof turquoise2 / sizeof *turquoise2;
+    IrSender.sendRaw(turquoise2, tamanho, 38);
+  }
+  else if (randomColor == 19) { 
+    tamanho = sizeof turquoise3 / sizeof *turquoise3;
+    IrSender.sendRaw(turquoise3, tamanho, 38);
+  }
   }
 
 
