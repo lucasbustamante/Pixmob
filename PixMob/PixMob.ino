@@ -129,7 +129,7 @@ void loop() { // loop de execução do programa principal
     tamanho = sizeof turquoise3 / sizeof *turquoise3;
     IrSender.sendRaw(turquoise3, tamanho, 38);
   }
-    else if (valorPotenciometro < 1023) { 
+    else if (valorPotenciometro > 976.50) { 
       
       int randomColor = random(0, 19);
 
